@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +19,15 @@ header {
   align-items: center;
   padding: 15px 50px;
   background: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-header .logo h2 {
-  font-size: 20px;
+header .logo h1 {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 header .logo p {
@@ -34,8 +35,13 @@ header .logo p {
   color: gray;
 }
 
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
 header nav a {
-  margin-left: 20px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -52,10 +58,10 @@ header nav .btn {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: #f7f7f7;
+  background: #f8f8f8;
 }
 
-.hero h1 {
+.hero h2 {
   font-size: 36px;
   font-weight: bold;
 }
@@ -63,7 +69,7 @@ header nav .btn {
 .hero p {
   max-width: 700px;
   margin: 15px auto;
-  color: gray;
+  color: #666;
   font-size: 16px;
 }
 
@@ -103,7 +109,7 @@ header nav .btn {
 }
 
 .services p {
-  color: gray;
+  color: #666;
 }
 
 .service-cards {
@@ -120,11 +126,11 @@ header nav .btn {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   flex: 1;
-  max-width: 300px;
+  max-width: 280px;
   text-align: left;
 }
 
-/* Choose Us */
+/* Why Choose Us */
 .choose {
   padding: 60px 50px;
   background: #f7f7f7;
@@ -132,40 +138,45 @@ header nav .btn {
 
 .choose h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .choose-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .choose-left {
   flex: 1;
-  margin-right: 30px;
   min-width: 250px;
+}
+
+.choose-left p {
+  margin-bottom: 15px;
 }
 
 .choose-left ul {
   list-style: none;
-  margin-top: 15px;
 }
 
 .choose-left li {
-  margin-bottom: 10px;
-  color: green;
-  font-weight: 500;
+  margin-bottom: 8px;
+  color: #111;
 }
 
 .choose-right {
   flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  min-width: 250px;
+  gap: 20px;
 }
 
-.choose-right p {
-  margin-bottom: 20px;
+.choose-right div {
   font-size: 20px;
   font-weight: bold;
 }
@@ -186,12 +197,13 @@ header nav .btn {
 
 .contact h2 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .contact-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -237,4 +249,3 @@ footer {
   color: #fff;
   margin-top: 20px;
 }
-
