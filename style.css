@@ -1,136 +1,222 @@
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* General Styles */
-body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: #1e1e2f;
-  color: #fff;
-  padding: 15px 0;
-}
-
-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
+header .logo h2 {
+  font-size: 20px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+header .logo p {
+  font-size: 12px;
+  color: gray;
 }
 
-header nav ul li a {
-  color: #fff;
+header nav a {
+  margin-left: 20px;
   text-decoration: none;
-  font-weight: bold;
+  color: #333;
+  font-weight: 500;
 }
 
-header nav ul li a:hover {
-  color: #ff9800;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/600') no-repeat center center/cover;
+header nav .btn {
+  background: #000;
   color: #fff;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
-.hero h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f7f7f7;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 15px auto;
+  color: gray;
 }
 
-.btn {
-  background: #ff9800;
-  color: #fff;
-  padding: 12px 25px;
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn-dark, .btn-light {
+  padding: 12px 20px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  margin: 5px;
 }
 
-.btn:hover {
-  background: #e68900;
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
 }
 
 /* Services */
 .services {
-  padding: 50px 0;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .services h2 {
-  margin-bottom: 30px;
-  font-size: 32px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.services p {
+  color: gray;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
   gap: 20px;
 }
 
-.service-card {
-  background: #f4f4f4;
-  padding: 20px;
+.card {
+  background: #fff;
+  padding: 25px;
   border-radius: 10px;
-  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
 }
 
-.service-card:hover {
-  background: #ddd;
+/* Choose Us */
+.choose {
+  padding: 60px 50px;
+  background: #f7f7f7;
 }
 
-.service-card h3 {
-  margin-bottom: 15px;
-  font-size: 22px;
+.choose-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.choose-left {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.choose-left ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.choose-left li {
+  margin-bottom: 10px;
+  color: green;
+  font-weight: 500;
+}
+
+.choose-right {
+  flex: 1;
+  text-align: center;
+}
+
+.choose-right p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* About */
 .about {
-  background: #1e1e2f;
-  color: #fff;
-  padding: 50px 0;
   text-align: center;
+  padding: 60px 20px;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 50px;
+  background: #f7f7f7;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.contact-info {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* Footer */
 footer {
+  text-align: center;
+  padding: 20px;
   background: #111;
   color: #fff;
-  text-align: center;
-  padding: 20px 0;
+  margin-top: 20px;
 }
+
+  
