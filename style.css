@@ -1,3 +1,15 @@
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Ultimate Softwares</h1>
+  </header>
+
+  <main>
+    <p>We provide IT solutions, web development, and business services.</p>
+  </main>
+</body>
+</html>
 /* General Reset */
 * {
   margin: 0;
