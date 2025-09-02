@@ -24,11 +24,11 @@ body {
 .logo h2 { margin: 0; }
 .logo p { font-size: 14px; color: #666; }
 
-/* Logo image size (reduced) */
+/* Logo image size (adjusted) */
 .logo img,
 .logo .logo-img,
 .logo .logo-image {
-  width: 36px;        /* <-- smaller size; change this number if you want it even smaller or larger */
+  width: 48px;        /* <-- slightly larger than previous 36px */
   max-width: 100%;
   height: auto;
   display: block;
