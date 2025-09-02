@@ -390,3 +390,66 @@ body, html {
   }
 }
 
+/* Softwares Section */
+.softwares {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.softwares h2 {
+  margin-bottom: 10px;
+}
+.software-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.software-cards .card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.software-cards .card:hover {
+  transform: translateY(-8px);
+}
+.software-cards h3 {
+  color: #0078ff;
+  margin-bottom: 10px;
+}
+
+/* Services Section (enhanced) */
+.services {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  text-align: center;
+}
+.services h2 {
+  margin-bottom: 10px;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.service-cards .card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.service-cards .card:hover {
+  transform: translateY(-8px);
+}
+.service-cards h3 {
+  color: #0078ff;
+  margin-bottom: 10px;
+}
