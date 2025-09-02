@@ -21,33 +21,24 @@ body {
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+.logo h2 { margin: 0; }
+.logo p { font-size: 14px; color: #666; }
 
-/* Logo */
-.logo h2 { 
-  margin: 0; 
-  font-size: 1.2rem; /* Reduced size */
-}
-.logo p { 
-  font-size: 12px; /* Slightly smaller text */
-  color: #666; 
+/* Logo image size (reduced) */
+.logo img,
+.logo .logo-img,
+.logo .logo-image {
+  width: 36px;        /* <-- smaller size; change this number if you want it even smaller or larger */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
-.nav-links { 
-  list-style: none; 
-  display: flex; 
-  gap: 20px; 
-}
-.nav-links a { 
-  text-decoration: none; 
-  color: #333; 
-  font-weight: 500; 
-}
-.nav-links .btn { 
-  background: #000; 
-  color: #fff; 
-  padding: 8px 15px; 
-  border-radius: 5px; 
-}
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { text-decoration: none; color: #333; font-weight: 500; }
+.nav-links .btn { background: #000; color: #fff; padding: 8px 15px; border-radius: 5px; }
+
 
 /* Hero Section */
 .hero {
