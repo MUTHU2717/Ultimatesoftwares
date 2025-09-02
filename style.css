@@ -265,3 +265,83 @@ footer {
     align-items: center;
   }
 }
+/* Insights Section */
+.insights {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  border-left: 4px solid #d32f2f;
+  padding-left: 10px;
+}
+
+.insight-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.insight-card img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.insight-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.insight-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.insight-content .sub-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.insight-content p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.insight-link {
+  font-weight: bold;
+  color: #0078ff;
+  text-decoration: none;
+}
+
+.insight-link:hover {
+  text-decoration: underline;
+}
+
+/* Reverse layout (image on right) */
+.insight-card.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .insight-card,
+  .insight-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .insight-card img {
+    width: 100%;
+  }
+}
+
