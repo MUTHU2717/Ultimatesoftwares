@@ -51,6 +51,61 @@ body {
   border-radius: 5px;
 }
 
+/* Header Layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo + Company Info */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;   /* Adjust size */
+  width: auto;
+  margin-right: 15px;
+}
+
+.company-info h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.company-info p {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+
 /* Hero Section */
 .hero {
   text-align: center;
